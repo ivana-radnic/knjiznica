@@ -14,9 +14,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const connection = mysql.createConnection({
   host: "ucka.veleri.hr",
-  user: "mskrak",
+  user: "iradnic",
   password: "11",
-  database: "mskrak,
+  database: "iradnic,
 });
 
 // biome-ignore lint/complexity/useArrowFunction: <explanation>
