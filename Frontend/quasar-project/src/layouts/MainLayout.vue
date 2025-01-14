@@ -11,8 +11,8 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Knjižnica
+        <q-toolbar-title class="text-weight-bolder, text-h4">
+          Sporty
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import {ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
 
 defineOptions({
@@ -56,45 +56,57 @@ defineOptions({
 const linksList = [
   {
     title: 'Naslovnica',
-    caption: 'Naslovna stranica',
+    caption: 'Početna stranica',
     icon: 'home',
     link: '#'
   },
   {
     title: 'Popis knjiga',
-    caption: 'Popis svih knjiga',
-    icon: 'list',
+    caption: 'Popis knjiga',
+    icon: 'book',
     link: '#/PopisKnjiga'
   },
   {
-    title: 'Trazi knjigu',
-    caption: 'Pronađite svoju knjigu',
-    icon: 'book',
-    link: '#/TraziKnjigu'
+    title: 'Pretrazivanje',
+    caption: '',
+    icon: 'search',
+    link: '#/Pretrazivanje'
   },
   {
-    title: 'O Nama',
-    caption: 'Naša povijest',
-    icon: 'history',
+    title: 'O nama',
+    caption: 'Saznajte nešto o nama',
+    icon: 'record_voice_over',
     link: '#/ONama'
   },
   {
     title: 'Lokacija',
-    caption: 'Pronađite nas',
+    caption: 'Lokacije',
     icon: 'map',
-    link: '#/Lokacija'
-  },
-  {
-    title: 'Login',
-    caption: 'Prijava',
-    icon: 'login',
-    link: '#/Login'
+    link: '#/Lokacije'
   },
   {
     title: 'Registracija',
-    caption: 'Postanite član!',
+    caption: 'Registracija',
     icon: 'man',
     link: '#/Registracija'
+  },
+  {
+    title: 'Prijava',
+    caption: 'Prijava',
+    icon: 'login',
+    link: '#/Prijava'
+  },
+  {
+    title: 'Popis knjiga baza',
+    caption: 'Popis knjiga baza',
+    icon: 'book',
+    link: '#/PopisKnjigaBaza'
+  },
+  {
+    title: 'Rezervacija',
+    caption: 'Rezervacija',
+    icon: 'book',
+    link: '#/Rezervacije'
   }
 ]
 
